@@ -39,7 +39,7 @@
 
     <div class="mt-5 text-center container">
 
-        <% if (foundEntries != []) { 
+        <% if (foundEntries.length !== 0) { 
           for (let i=0; i<foundEntries.length; i++) { %>
             <div class="mt-5">
                 <h4><%= foundEntries[i].title%></h4>
@@ -49,8 +49,8 @@
                 </a>
             </div>
             <br><hr>
-        <% } 
-          } else { %>
+        <% } %>
+          <%} else { %>
             <h3>Entry not found</h3>  
        <%} %>
     </div>
