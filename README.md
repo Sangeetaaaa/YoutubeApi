@@ -5,6 +5,4 @@
 $ npm i -y
 
 $ nodemon app.js
-
-...
 ```
